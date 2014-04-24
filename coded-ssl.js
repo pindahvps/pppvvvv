@@ -32,13 +32,12 @@ $.getJSON(
         }
     );
 }
-var bitly = B64.decode("aHR0cDovL2FwaS5iaXRseS5jb20vdjMvc2hvcnRlbj9jYWxsYmFjaz0/");
+var bitly = 'https://api-ssl.bitly.com/v3/shorten';
     $.getJSON(
         bitly,
         {
             "format": "json",
-            "apiKey": api_key,
-            "login": login,
+            "access_token": 'a84a4593b9254cb79df266abddcd4471127e1b1b',
             "longUrl": long_url
         },
         function(response)
